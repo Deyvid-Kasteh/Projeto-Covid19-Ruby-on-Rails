@@ -1,9 +1,9 @@
 <div class="container">
-<h1>Dados atualizados do COVID19</h1>
+<h1>Resultado busca de livros</h1>
 
 
-<p>Confirmados: <%= @summary['confirmed']['value']%></p>
-<p>Recuperados: <%= @summary['recovered']['value']%></p>
-<p>Mortes: <%= @summary['deaths']['value']%></p>
 
+<% @summary['items'].each do |item| %>
+  <p>Livro: <%= item['volumeInfo']['title']%></p>
+<% end %>%>
 </div>

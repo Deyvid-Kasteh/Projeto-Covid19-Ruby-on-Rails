@@ -4,17 +4,17 @@ class HomeController < ApplicationController
     @summary = @summary_service.general
   end
 
-  def confirmed
-    @confirmed = @summary_service.confirmed
-  end
+  # def confirmed
+  #   @confirmed = @summary_service.confirmed
+  # end
 
-  def recovered
-    @recovered = @summary_service.recovered
-  end
+  # def recovered
+  #   @recovered = @summary_service.recovered
+  # end
 
-  def deaths
-    @deaths = @summary_service.deaths
-  end
+  # def deaths
+  #   @deaths = @summary_service.deaths
+  # end
 
   private
   def set_global_summary_service
