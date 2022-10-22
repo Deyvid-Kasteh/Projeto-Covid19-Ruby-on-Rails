@@ -4,6 +4,21 @@
 
 
 <% @summary['items'].each do |item| %>
-  <p>Livro: <%= item['volumeInfo']['title']%></p>
-<% end %>%>
+  <p>Livro: <%= item['volumeInfo']['title']%></p> %>
+
+
+  <% form_tag do %>
+  
+  <%= text_field_tag 'busca' %>
+
+
+  <% end %>
+
+
+  <%# if item['volumeInfo']['imageLinks']['smallThumbnail']? %>
+
+    <%# thumb = item['volumeInfo']['imageLinks']['smallThumbnail']%>
+    <%#=image_tag thumb %>
+  <%# end %>
+<% end %>
 </div>

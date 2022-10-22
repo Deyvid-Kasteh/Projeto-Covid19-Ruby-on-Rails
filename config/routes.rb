@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'search/busca'
   root 'home#index'
   get 'confirmados', action: 'confirmed', controller: 'home'
   get 'recuperados', action: 'recovered', controller: 'home'
